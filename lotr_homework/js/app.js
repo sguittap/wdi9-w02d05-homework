@@ -80,14 +80,14 @@ const makeMiddleEarth = () => {
 // Chapter 2
 // ============
 const makeHobbits = () => {
-  const ul = document.createElement("ul");
-  document.getElementById('The-Shire').append(ul);
+  const uLHobbit = document.createElement("ul");
+  document.getElementById('The-Shire').append(uLHobbit);
   
 for(let i=0; i<hobbits.length; i++){
-  const li= document.createElement("li");
-  li.innerHTML = "<li/>" + hobbits[i];
-  li.setAttribute("class", "hobbits");
-  ul.append(li);
+  const lIHobbit= document.createElement("li");
+  lIHobbit.innerHTML = "<li/>" + hobbits[i];
+  lIHobbit.setAttribute("class", "hobbits");
+  uLHobbit.append(lIHobbit);
   }
   
 };
@@ -186,12 +186,14 @@ const makeBuddies = () => {
 // Chapter 6
 // ============
 const leaveTheShire = () => {
-
+  const hobbits= document.querySelector("ul");
+    Rivendell.append(hobbits)
+};
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
 
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
-};
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 6 complete - Left the Shire"
