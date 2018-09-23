@@ -157,6 +157,19 @@ const makeBaddies = () => {
 // Chapter 5
 // ============
 const makeBuddies = () => {
+  const goodies = document.createElement("aside");
+  document.getElementById('Mordor').append(goodies);
+  const goodDudes= document.createElement("ul");
+  $('aside').append(goodDudes)
+
+  for(let i=0;i<buddies.length; i++){
+    const bros = document.createElement("li");
+    bros.innerHTML= "<li>" + buddies[i];
+    bros.setAttribute("id", "buddy");
+    goodDudes.append(bros);
+    
+  }
+
 
   // 1. create an aside tag and append it to middle-earth below mordor
 
