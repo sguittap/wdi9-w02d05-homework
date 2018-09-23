@@ -41,6 +41,16 @@ const lands = [
 // Chapter 1
 // ============
 const makeMiddleEarth = () => {
+    let middleEarth = document.createElement("section");
+    middleEarth.setAttribute("id", "middle-earth");
+    $('body').append(middleEarth);
+  for(let i=0; i<lands.length; i++){
+    let makeLand = document.createElement("article");
+    makeLand.innerHTML = "<h1/>" + lands[i];
+    $('body').append(makeLand);
+  }
+}
+
 
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
 
@@ -60,7 +70,7 @@ const makeMiddleEarth = () => {
 
   //   3d. appends each land to the middle-earth section
 
-};
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
