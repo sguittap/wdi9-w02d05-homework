@@ -199,15 +199,22 @@ const leaveTheShire = () => {
 // The commit message should read: "Chapter 6 complete - Left the Shire"
 
 // ============
-// Chapter 7
+// Chapter 7--------------- NOT DONE----------------
 // ============
 const beautifulStranger = () => {
+  const newName= document.getElementsByTagName("li")
+  for(let i=0; i<newName.length; i++){
+    if(newName[i].innerHTML === "Strider"){
+        newName[i].innerHTML = "Aragorn";
+      }
+    }
+  };
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
 
   // hint: You can get a list of elements by tag name, such as 'aside'
 
-};
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
