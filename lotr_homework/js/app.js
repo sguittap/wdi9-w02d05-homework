@@ -132,13 +132,23 @@ const keepItSecretKeepItSafe = () => {
 // Chapter 4
 // ============
 const makeBaddies = () => {
+  const enemy = document.createElement("ul")
+  document.getElementById('Mordor').append(enemy);
+  
+  for(let i=0; i<baddies.length; i++){
+  const list = document.createElement("li");
+  list.innerHTML = "<li/>" + baddies[i];
+  list.setAttribute("class", "baddy");
+  enemy.append(list);
+  }
+};
 
   // 1. display an unordered list of baddies in Mordor
 
   // 2. give each of the baddies a class of "baddy"
 
   // 3. remember to append them to Mordor
-};
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 4 complete - Made the Baddies"..
