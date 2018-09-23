@@ -110,6 +110,10 @@ console.log('Make hobbits');
 // Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
+  const ring = document.createElement('div');
+  ring.setAttribute("id", "the-ring");
+  const frodo = document.querySelector(".hobbits");
+  frodo.append(ring);
 
   // 1. create an empty div with an id of 'the-ring'
 
