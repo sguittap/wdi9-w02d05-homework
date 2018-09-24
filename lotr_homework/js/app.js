@@ -223,6 +223,27 @@ const beautifulStranger = () => {
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
+  const fellowship = document.createElement("div");
+  fellowship.setAttribute("id", "the-fellowship");
+  fellowship.innerHTML = "<h1>" + "The Fellowship";
+  const middleEarth = document.getElementById("middle-earth")
+  middleEarth.append(fellowship);
+  $('.hobbit').append($("#the-fellowship"));
+  $('.buddy').append($("#the-fellowship"));
+};
+
+
+//********************************************* */
+
+//this is where i got stuck. didnt even realize that i wasnt coding with jquery. so heres what i have
+//for vanilla code. i plan on finishing this. just ran out of time. 
+
+
+
+
+
+
+
 
   // 1. create a new div with an id 'the-fellowship'
 
@@ -232,7 +253,7 @@ const forgeTheFellowShip = () => {
 
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
 
-};
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 8 complete - The Fellowship is created"
